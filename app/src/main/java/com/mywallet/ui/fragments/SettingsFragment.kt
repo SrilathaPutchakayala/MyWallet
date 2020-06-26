@@ -41,17 +41,6 @@ class SettingsFragment : Fragment() {
         return dataViewBinding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        /*tvExpenseCategoryLabel.setOnClickListener {
-            val action = SettingsFragmentDirections.action_settingsFragment_to_expenseCategoryListFragment()
-
-            val navController = it.findNavController()
-            navController.navigate(action)
-        }*/
-
-    }
-
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 

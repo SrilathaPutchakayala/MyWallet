@@ -80,11 +80,6 @@ class ExpenseCategoryListFragment : Fragment() {
         dataViewBinding.rvExpenseCategoryList.addItemDecoration(DividerItemDecoration(activity, DividerItemDecoration.VERTICAL))
     }
 
-    override fun onResume() {
-        super.onResume()
-        //subscribeData()
-    }
-
     companion object {
         fun newInstance(): ExpenseCategoryListFragment {
             return ExpenseCategoryListFragment()
