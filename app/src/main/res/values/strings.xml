@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">MyWallet</string>
+
+    <string name="income_text">Income</string>
+    <string name="expense_text">Expense</string>
+    <string name="balance_text">Balance</string>
+
+    <string name="add_new_category_label">Add new category</string>
+
+    <string name="add_text">Add</string>
+    <string name="edit_text">Edit</string>
+    <string name="delete_text">Delete</string>
+    <string name="submit_text">Submit</string>
+    <string name="settings_text">Settings</string>
+    <string name="add_income_text">Add \nIncome</string>
+    <string name="add_expense_text">Add \nExpense</string>
+    <string name="add_expense_category_text">Add new expense category</string>
+    <string name="add_income_category_text">Add new income category</string>
+    <string name="add_expense_category_hint_text">Category name</string>
+    <string name="add_income_category_hint_text">Category name</string>
+    <string name="income_legend_text">Day with income</string>
+    <string name="expense_legend_text">Day with expense</string>
+    <string name="today_legend_text">Today</string>
+    <string name="today_transaction_text">Today\'s transactions</string>
+    <string name="no_transaction_text">No transactions for today.Tap here to start adding expenses or incomes.</string>
+    <string name="expense_details_text">Expense details</string>
+    <string name="income_details_text">Income details</string>
+    <string name="balance_details_text">Balance details</string>
+    <string name="no_of_transactions_text">Number of transactions:</string>
+    <string name="total_expense_amount_text">Total expense amount</string>
+    <string name="total_income_amount_text">Total income amount</string>
+
+    <string name="chart_text">Charts</string>
+    <string name="transactions_text">Transactions</string>
+    <string name="no_transaction_extra_text">No transactions on this day.You can add an expense or income by pressing on the + button below.</string>
+
+    <string name="general_settings_text">General Settings</string>
+    <string name="income_category_title">Income Categories</string>
+    <string name="expense_category_title">Expense Categories</string>
+    <string name="add_or_edit_income_label">Add or edit income category</string>
+    <string name="add_or_edit_expense_label">Add or edit expense category</string>
+    <string name="reminders_text">Reminders</string>
+    <string name="reminders_label">Set up or edit reminders</string>
+    <string name="currency_text">Currency</string>
+    <string name="currency_label">Choose your preferred currency</string>
+    <string name="currency_format_text">Currency format</string>
+    <string name="currency_format_label">Choose your preferred number format</string>
+    <string name="first_day_week_text">First day of week</string>
+    <string name="first_day_week_label">Choose first day of week</string>
+    <string name="change_language_text">Change language</string>
+    <string name="change_language_label">Choose your preferred language</string>
+
+    <string name="label_choose_color">Choose color</string>
+    <string name="label_choose_category_icon">Choose category icon</string>
+    <string name="label_choose_income_category">Choose income category...</string>
+    <string name="label_close">Close</string>
+    <string name="label_save">Save</string>
+
+    <string name="prompt_empty_category_name">Please fill in the category name</string>
+
+
+
+</resources>

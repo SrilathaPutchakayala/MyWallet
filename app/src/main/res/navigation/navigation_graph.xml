@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/mainFragment">
+
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.mywallet.ui.fragments.MainFragment"
+        android:label="MainFragment">
+        <action
+            android:id="@+id/action_mainFragment_to_transactionsFragment"
+            app:destination="@id/transactionsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@+id/mainFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@+id/mainFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_addIncomeFragment"
+            app:destination="@id/addIncomeFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@+id/mainFragment" />
+
+        <argument
+            android:name="title"
+            app:argType="string" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/transactionsFragment"
+        android:name="com.mywallet.ui.fragments.TransactionsFragment"
+        android:label="fragment_transaction"
+        tools:layout="@layout/fragment_transaction">
+        <argument
+            android:name="selectedDate"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true"/> <!-- app:type="string" app:argType="string"-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/addIncomeFragment"
+        android:name="com.mywallet.ui.fragments.AddIncomeFragment"
+        android:label="fragment_add_income"
+        tools:layout="@layout/fragment_add_income" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.mywallet.ui.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_expenseCategoryListFragment"
+            app:destination="@id/expenseCategoryListFragment"
+            app:popUpTo="@+id/settingsFragment"/>
+        <action
+            android:id="@+id/action_settingsFragment_to_incomeCategoryListFragment"
+            app:destination="@id/incomeCategoryListFragment"
+            app:popUpTo="@+id/settingsFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/expenseCategoryListFragment"
+        android:name="com.mywallet.ui.fragments.ExpenseCategoryListFragment"
+        android:label="fragment_expense_category_list"
+        tools:layout="@layout/fragment_expense_category_list" >
+        <action
+            android:id="@+id/action_expenseCategoryListFragment_to_addExpenseCategory"
+            app:destination="@id/addExpenseCategoryFragment"
+            app:popUpTo="@+id/expenseCategoryListFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/incomeCategoryListFragment"
+        android:name="com.mywallet.ui.fragments.IncomeCategoryListFragment"
+        android:label="fragment_income_category_list"
+        tools:layout="@layout/fragment_income_category_list" >
+        <action
+            android:id="@+id/action_incomeCategoryListFragment_to_addIncomeCategory"
+            app:destination="@id/addIncomeCategoryFragment"
+            app:popUpTo="@+id/incomeCategoryListFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/addExpenseCategoryFragment"
+        android:name="com.mywallet.ui.fragments.AddExpenseCategoryFragment"
+        android:label="fragment_add_expense_category"
+        tools:layout="@layout/fragment_add_expense_category" />
+
+    <fragment
+        android:id="@+id/addIncomeCategoryFragment"
+        android:name="com.mywallet.ui.fragments.AddIncomeCategoryFragment"
+        android:label="fragment_add_income_category"
+        tools:layout="@layout/fragment_add_income_category" />
+
+    <!--
+
+
+    <fragment
+        android:id="@+id/balanceFragment"
+        android:name="com.mywallet.ui.fragments.BalanceFragment"
+        android:label="BalanceFragment"
+        tools:layout="@layout/fragment_income">
+       &lt;!&ndash; <action android:id="@+id/action_balanceFragment_to_incomeFragment" app:destination="@id/incomeFragment" />&ndash;&gt;
+        <argument
+            android:name="title"
+            android:defaultValue="BalanceFragment" />
+    </fragment>-->
+    <!--<activity
+        android:id="@+id/mainActivity"
+        android:name="com.mywallet.ui.activities.MainActivity"
+        android:label="MainActivity"
+        tools:layout="@layout/activity_main">
+        <argument
+            android:name="title"
+            android:defaultValue="Main" />
+    </activity>-->
+</navigation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item
+        android:id="@id/incomeFragment"
+        android:title="@string/income_text" />
+
+    <item
+        android:id="@id/balanceFragment"
+        android:title="@string/balance_text" />-->
+
+    <!--<item
+        android:title="@string/expense_text" />-->
+
+    <!--
+     android:id="@id/actionHome"
+    android:icon="@drawable/ic_home_black_24dp"
+    android:id="@id/actionDashboard"
+     android:icon="@drawable/ic_dashboard_black_24dp"
+     android:id="@id/actionNotifications"
+     android:icon="@drawable/ic_notifications_black_24dp"
+    -->
+
+</menu>
